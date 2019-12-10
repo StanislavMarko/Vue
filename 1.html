@@ -14,15 +14,18 @@
 </head>
 <body>
 <div id="root" class="container">
-    <message title="Hello World" body="Lorem ipsum"></message>
-    <message title="Hello All" body="Really interesting"></message>
+    <modal v-if="showModal" @close="showModal = false">
+        <p>Another text</p>
 
+    </modal>
+
+    <butoon id="button"  @click="showModal = true">Show Modal</butoon>
+     <!--<message title="Hello World" body="Lorem ipsum"></message>-->
+    <!--<message title="Hello All" body="Really interesting"></message>-->
     <!--<task-list></task-list>-->
     <!--<task>Go to the store</task>-->
     <!--<task>Go to the bank</task>-->
     <!--<task>Go to the school</task>-->
-
-
     <!--<h1>-->
         <!--{{ message.split('').reverse().join('') }}-->
     <!--</h1>-->
