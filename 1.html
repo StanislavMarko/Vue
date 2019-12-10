@@ -14,12 +14,26 @@
 </head>
 <body>
 <div id="root" class="container">
-    <modal v-if="showModal" @close="showModal = false">
-        <p>Another text</p>
 
-    </modal>
+    <tabs>
 
-    <butoon id="button"  @click="showModal = true">Show Modal</butoon>
+        <tab name="About us" :selected="true">
+            <h1>Here is the content 1 </h1>
+        </tab>
+        <tab name="About our">
+            <h1>Here is the content  2</h1>
+        </tab>
+        <tab name="About winter">
+            <h1>Here is the content  3</h1>
+        </tab>
+
+    </tabs>
+    <!--<modal v-if="showModal" @close="showModal = false">-->
+        <!--<p>Another text</p>-->
+
+    <!--</modal>-->
+
+    <!--<butoon id="button"  @click="showModal = true">Show Modal</butoon>-->
      <!--<message title="Hello World" body="Lorem ipsum"></message>-->
     <!--<message title="Hello All" body="Really interesting"></message>-->
     <!--<task-list></task-list>-->
